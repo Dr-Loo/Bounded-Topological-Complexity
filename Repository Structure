@@ -1,0 +1,46 @@
+bounded-topological-complexity/
+├── papers/                          # Manuscripts and preprints
+│   ├── main_paper.pdf               # Main publication
+│   ├── supplement.pdf               # Supplementary material
+│   └── arxiv_version.tex            # LaTeX source for arXiv
+├── code/
+│   ├── sfit_framework/              # SFIT theory implementation
+│   │   ├── four_powers.py           # Four powers calculations
+│   │   ├── complexity.py            # Complexity functional
+│   │   └── valency.py               # Valency rules
+│   ├── elements/                    # Specific system implementations
+│   │   ├── double_pendulum.py       # 4H1 element
+│   │   ├── lorenz.py                # 3D2 element
+│   │   └── norton_dome.py           # 0N0 null element
+│   ├── periodic_table/              # Classification tools
+│   │   ├── table_generator.py       # Generate periodic table
+│   │   ├── element_classifier.py    # Classify new systems
+│   │   └── db_schema.py             # ChaosDB schema
+│   └── ptfp_simulator/              # PTFP spectrometer simulation
+│       ├── optical_pipeline.py      # Optical measurement simulation
+│       ├── sheaf_entropy.py         # Symbolic entropy calculation
+│       └── torsion_measurement.py   # Geometric torsion
+├── data/
+│   ├── measurements/                # Experimental data
+│   │   ├── double_pendulum.csv      # 4H1 measurements
+│   │   ├── lorenz.csv               # 3D2 measurements
+│   │   └── calibration.csv          # PTFP calibration
+│   ├── predictions/                 # 2026 test predictions
+│   │   ├── henon_heiles.json        # Hénon–Heiles predictions
+│   │   └── coupling_experiments.json
+│   └── figures/                     # Figures for papers & docs
+│       ├── periodic_table.png       # Periodic table schematic
+│       ├── complexity_scaling.png   # Scaling of H^1 near λc
+│       ├── transformation_paths.png # Pathways across the table
+│       └── ptfp_pipeline.png        # PTFP spectrometer diagram
+├── experiments/
+│   ├── ptfp_protocol/               # PTFP measurement protocols
+│   ├── reaction_chemistry/          # Coupling experiments
+│   └── validation/                  # System validation tests
+├── docs/
+│   ├── theory/                      # Theoretical foundations
+│   ├── api/                         # Code documentation
+│   └── tutorials/                   # Getting started guides
+└── docker/
+    ├── ptfp_simulator.dockerfile    # Container for PTFP sim
+    └── chaosdb.dockerfile           # ChaosDB container
